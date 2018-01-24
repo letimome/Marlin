@@ -357,6 +357,9 @@
 #if ENABLED(CNC_COORDINATE_SYSTEMS)
   int8_t active_coordinate_system = -1; // machine space
   float coordinate_system[MAX_COORDINATE_SYSTEMS][XYZ];
+/*coment from leti
+another line 
+just another one*/
 #endif
 
 bool Running = true;
@@ -562,6 +565,7 @@ uint8_t target_extruder;
 #endif
 #if ENABLED(Y_DUAL_ENDSTOPS)
   float y_endstop_adj;                // Initialized by settings.load()
+  float another_variable_leti
 #endif
 #if ENABLED(Z_DUAL_ENDSTOPS)
   float z_endstop_adj;                // Initialized by settings.load()
@@ -686,6 +690,7 @@ static bool send_ok[BUFSIZE];
 
 #if ENABLED(PID_EXTRUSION_SCALING)
   int lpq_len = 20;
+  int leti_int = 40;
 #endif
 
 #if ENABLED(HOST_KEEPALIVE_FEATURE)
